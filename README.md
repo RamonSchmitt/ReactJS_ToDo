@@ -1,15 +1,16 @@
-# React Starter
+# ReactJS TodoList
 
 ## Installation
 
-```bash
+```
 npm install
 npm start
-open http://localhost:3000
 ```
 
+* [Open React TodoList](http://localhost:3000)
 
-------------------
+## API
 
-Simplified version of [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate) for the
-traineeship program.
+The required API can be found at:
+
+* [React TodoList API](https://vast-sands-74158.herokuapp.com/todos.json)
