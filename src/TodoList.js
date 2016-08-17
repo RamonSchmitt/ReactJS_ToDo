@@ -84,11 +84,11 @@ class TodoList extends React.Component {
 						);
 					}, this)}
 	      </ul>
-				<div>
+				<footer>
 					 <span>Todo: {this.state.counts.todo}</span>
 					 <span>Done: {this.state.counts.done}</span>
 					 <span>Total: {this.state.todos.length}</span>
-				</div>
+				</footer>
       </div>
     );
   }

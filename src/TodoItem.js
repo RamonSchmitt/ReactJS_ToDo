@@ -100,13 +100,11 @@ class TodoItem extends React.Component {
 	render() {
 		console.log(this.state.id);
     return (
-			<div>
 				<li>
 					<input className="toggle" id={this.state.id} type="checkbox" ref="completed" checked={this.state.completed ? "checked" : ""} onClick={this.toggleChecked.bind(this)} />
 					<p>	{this.props.title} </p>
 					<a href="#" onClick={this.deleteTodo.bind(this)}>delete</a>
 				</li>
-			</div>
     );
   }
 }

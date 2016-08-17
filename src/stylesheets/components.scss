@@ -1,1 +1,69 @@
 @import "bootstrap";
+
+body {
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 4em;
+  color: #104050;
+}
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #F4F4F0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px;
+}
+
+form {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+form input {
+  height: 48px;
+  width: 320px;
+  padding: 16px;
+  border: 3px solid #104050;
+  font-size: 0.75em;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+li {
+  margin: 20px 0px;
+}
+
+li p {
+  display: inline;
+}
+
+li a {
+  display: inline;
+}
+
+footer {
+  text-align: center;
+}
+
+footer span {
+  margin: 0px 10px;
+}
+
+button {
+  width: 48px;
+  height: 48px;
+  margin-left: 10px;
+  border: 3px solid #104050;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  background: none;
+  line-height: 24px;
+}

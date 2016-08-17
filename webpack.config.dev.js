@@ -20,17 +20,25 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?/,
-        loaders: ['babel'],
-        query: {
-          presets: ['es2015', 'react']
-        },
-        include: path.join(__dirname, 'src')
+      test: /\.jsx?/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015', 'react']
       },
-      { test: /\.woff2?$/,   loader: "url-loader?limit=10000&minetype=application/font-woff" },
+      include: path.join(__dirname, 'src')
+      },
+      { test: /\.woff2?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
       { test: /\.ttf$/,    loader: "file-loader" },
       { test: /\.eot$/,    loader: "file-loader" },
       { test: /\.svg$/,    loader: "file-loader" },
       { test: /\.png$/,    loader: "file-loader" },
-      { test: /\.scss$/,   loader: 'style!css!sass'}
-    ]
+      { test: /\.scss$/,   loader: 'style!css!sass' }
+  ],
+  resolve: {
+        extensions: ['', '.js', '.jsx', '.css'],
+        modulesDirectories: [
+          'node_modules'
+        ]
+    }
+  }
+};

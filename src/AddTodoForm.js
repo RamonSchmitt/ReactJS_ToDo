@@ -35,12 +35,10 @@ class AddTodoForm extends React.Component {
 
   render() {
     return (
-			<div>
 				<form onSubmit={this.addNewTodo.bind(this)}>
 						<input ref="addTodoInput" placeholder="What needs to be done?" />
-						<button>Add</button>
+						<button>+</button>
 				</form>
-			</div>
     );
   }
 }
